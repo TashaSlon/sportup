@@ -1,0 +1,19 @@
+.btn__menu {
+    width: 23px;
+    height: 16px;
+
+    padding: 0 14px;
+    margin: 0;
+    background-image: url('../../../images/menu.svg');
+    background-size: 23px 16px;
+    background-repeat: no-repeat;
+    background-position: 14px;
+
+    border-radius: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .btn__menu {
+        display: none;
+    }
+}

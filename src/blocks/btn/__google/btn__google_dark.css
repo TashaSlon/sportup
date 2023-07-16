@@ -1,0 +1,18 @@
+.btn__google_dark {
+    height: 36px;
+    
+    padding: 0;
+
+    background-image: url('../../../images/googleplay-dark.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    .btn__google_dark {
+        height: 52px;
+    }
+}

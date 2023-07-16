@@ -1,0 +1,17 @@
+.header__title {
+    margin: 0;
+
+    color: #000;
+    font-size: 18px;
+    line-height: calc(22.28/18);
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .header__title {
+        font-size: 42px;
+        line-height: calc(52/42);
+    }
+}

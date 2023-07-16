@@ -1,0 +1,13 @@
+.header__text-block {
+    width: 60%;
+
+    padding: 20px 23px;
+}
+
+@media screen and (min-width: 768px) {
+    .header__text-block {
+        width: 411px;
+
+        padding: 99px 58px 0;
+    }
+}

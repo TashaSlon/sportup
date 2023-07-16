@@ -1,0 +1,13 @@
+.footer__copiright {
+    margin: 0;
+    padding-top: 19px;
+    font-size: 10px;
+    line-height: 260%;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__copiright {
+        font-size: 14px;
+        line-height: 186%;
+    }
+}

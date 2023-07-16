@@ -1,0 +1,17 @@
+.btn__apple_dark {
+    height: 36px;
+
+    padding: 0;
+
+    background-image: url('../../../images/appstore-dark.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .btn__apple_dark {
+        height: 52px;
+    }
+}

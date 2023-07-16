@@ -1,0 +1,9 @@
+.types {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .types {
+        max-width: 1140px;
+    }
+}

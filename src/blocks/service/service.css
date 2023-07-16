@@ -1,0 +1,19 @@
+.service {
+    position: relative;
+    
+    margin: 0 auto;
+}
+
+.service::before {
+    z-index: -1;
+    position: absolute;
+    top: -481px;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1648px;
+    background-image: url('../../images/map.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

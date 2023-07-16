@@ -1,0 +1,14 @@
+.header__btn-group {
+    display: flex;
+    justify-content: left;
+    gap: 23px;
+    flex-wrap: wrap;
+
+    width: 122px;
+}
+
+@media screen and (min-width: 768px) {
+    .header__btn-group {
+        width: 383px;
+    }
+}

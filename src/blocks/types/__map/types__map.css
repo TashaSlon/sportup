@@ -1,0 +1,12 @@
+.types__map {
+    display: block;
+    width: 100%;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .types__map {
+        max-width: 740px;
+        
+    }
+}

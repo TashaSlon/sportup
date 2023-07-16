@@ -1,0 +1,14 @@
+.footer__btn-group {
+    display: flex;
+    gap: 10px;
+
+    width: 253px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__btn-group {
+        gap: 23px;
+
+        width: 383px;
+    }
+}
