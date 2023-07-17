@@ -3,11 +3,11 @@ import Service from './Service';
 import Types from './Types';
 import Footer from './Footer.js';
 
-export default function Main() {
+export default function Main(props) {
 
   return (
     <>
-        <Header />
+        <Header onOpenMenu={props.onOpenMenu}/>
         <main className="content">
           <Service />
           <Types />

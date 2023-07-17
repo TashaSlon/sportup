@@ -1,0 +1,6 @@
+.menu__side {
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 41px;
+    padding-top: 60px;
+}

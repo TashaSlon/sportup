@@ -1,12 +1,12 @@
 import logo from '../images/logo.svg';
 
-export default function Header() {
+export default function Header(props) {
 
     return (
         <header className="header__back">
             <div className='header'>
                 <div className='header__top'>
-                    <btn className='btn btn__menu'></btn>
+                    <button className='btn btn__menu' onClick={props.onOpenMenu}></button>
                     <img src={logo} className="logo" alt="Логотип Место. Россия" />
                     <nav>
                         <ul className="menu menu__top">
