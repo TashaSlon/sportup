@@ -1,4 +1,5 @@
 import logo from '../images/logo.svg';
+import { Link } from "react-router-dom";
 
 export function OpenMenuPopup({ isOpen, onClose }) {
     const popupClass= isOpen ? ('popup popup_opened'): 'popup';
@@ -18,10 +19,13 @@ export function OpenMenuPopup({ isOpen, onClose }) {
             </div>
             <nav>
                 <ul className="menu menu__side">
-                    <li>О сервисе</li>
+                    <li>
+                        <Link to="/" className='links'>О сервисе</Link></li>
                     {/*<li>Тарифы</li>*/}
-                    <li>Terms-Conditions</li>
-                    <li>Privacy-policy</li>
+                    <li>
+                        <Link to="/terms-conditions" className='links'>Terms-Conditions</Link></li>
+                    <li>
+                        <Link to="/privacy-policy" className='links'>Privacy-policy</Link></li>
                 </ul>
             </nav>
         </section>

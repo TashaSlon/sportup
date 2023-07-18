@@ -7,7 +7,7 @@ export default function Main(props) {
 
   return (
     <>
-        <Header onOpenMenu={props.onOpenMenu}/>
+        <Header onOpenMenu={props.onOpenMenu} type='main'/>
         <main className="content">
           <Service />
           <Types />

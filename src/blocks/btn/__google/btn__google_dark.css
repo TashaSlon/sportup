@@ -1,5 +1,6 @@
 .btn__google_dark {
-    height: 36px;
+    width: 97px;
+    height: 28px;
     
     padding: 0;
 
@@ -13,6 +14,7 @@
 
 @media screen and (min-width: 768px) {
     .btn__google_dark {
-        height: 52px;
+        width: 143px;
+        height: 41px;
     }
 }
