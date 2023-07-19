@@ -1,7 +1,12 @@
 .links {
     text-decoration: none;
+    color: #000;
 }
 
 .links:visited {
+    color: inherit;
+}
+
+.links:active {
     color: inherit;
 }

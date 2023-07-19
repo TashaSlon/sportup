@@ -30,7 +30,7 @@ export default function Header(props) {
                         {/*<button className='btn btn__main'>Оформить подписку</button>*/}
                         <p className='header__label'>Скачать приложение</p>
                         <div className='header__btn-group'>
-                            <Link to="https://play.google.com/store/apps/details?id=com.madlemonlab.sportup" target='blank'><button className='btn btn__google'></button></Link>
+                            <Link to="https://play.google.com/store/apps/details?id=com.madlemonlab.sportup" target='blank' className='btn btn__google'></Link>
                         </div>
                     </div>
                     <div className={docClass}>
