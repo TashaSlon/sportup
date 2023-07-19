@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/sportup/static/css/main.c41959b9.css",
+    "main.js": "/sportup/static/js/main.161a5e66.js",
+    "static/js/496.936949d3.chunk.js": "/sportup/static/js/496.936949d3.chunk.js",
+    "static/media/header.png": "/sportup/static/media/header.4de94874bd919469716f.png",
+    "static/media/header-doc.png": "/sportup/static/media/header-doc.8cbfdadcb7681cb153e5.png",
+    "static/media/map.png": "/sportup/static/media/map.a7c7c63d47585c43c1b6.png",
+    "static/media/map.svg": "/sportup/static/media/map.6ebb2f2883fd597bb21a.svg",
+    "static/media/Roboto-Medium.woff": "/sportup/static/media/Roboto-Medium.b14ca2d2b289afceb0b0.woff",
+    "static/media/Roboto-Black.woff": "/sportup/static/media/Roboto-Black.88d7f1b3ca9a9494d8e3.woff",
+    "static/media/Roboto-Bold.woff": "/sportup/static/media/Roboto-Bold.3f2cbde6b72e8d05669f.woff",
+    "static/media/Roboto-Regular.woff": "/sportup/static/media/Roboto-Regular.31012f9b3e3da44f87e8.woff",
+    "static/media/Roboto-Medium.woff2": "/sportup/static/media/Roboto-Medium.fc0337b9cf1cce2e6e1e.woff2",
+    "static/media/Roboto-Black.woff2": "/sportup/static/media/Roboto-Black.ae0c1d409f7d45d81c29.woff2",
+    "static/media/Roboto-Bold.woff2": "/sportup/static/media/Roboto-Bold.6cd35edfbc0d7a417131.woff2",
+    "static/media/Roboto-Regular.woff2": "/sportup/static/media/Roboto-Regular.a25806274237d06e00a6.woff2",
+    "static/media/appstore-dark.svg": "/sportup/static/media/appstore-dark.1a5a926b7749d9088470.svg",
+    "static/media/googleplay-dark.svg": "/sportup/static/media/googleplay-dark.6f221793c22807949138.svg",
+    "static/media/logo.svg": "/sportup/static/media/logo.af716fd3b73325bd9cb4cee4c331d4e4.svg",
+    "static/media/bicycle.svg": "/sportup/static/media/bicycle.d4faa82a6d7e71f3b14f2c6d48ccbb55.svg",
+    "static/media/skates.svg": "/sportup/static/media/skates.7beb89482292682bb639becbcf4c3666.svg",
+    "static/media/skateboard.svg": "/sportup/static/media/skateboard.b066678e45ed4547432c401fba298e88.svg",
+    "static/media/gym.svg": "/sportup/static/media/gym.1e247b4edc182b72dc4ee78fc47fb5f3.svg",
+    "static/media/ski.svg": "/sportup/static/media/ski.1a0227970f8c2c11d3b192a51289aa3f.svg",
+    "static/media/training.svg": "/sportup/static/media/training.75c95b8fcbcdbb19d3e6.svg",
+    "static/media/run.svg": "/sportup/static/media/run.fb499993d0bd18ea89c94bde3ef4d734.svg",
+    "static/media/walk.svg": "/sportup/static/media/walk.b20bc62520b2159c465188bc7c87f58a.svg",
+    "static/media/water.svg": "/sportup/static/media/water.ebdabc175efa61a400c1c69139db7fbd.svg",
+    "index.html": "/sportup/index.html",
+    "static/media/close.svg": "/sportup/static/media/close.94f384f59f6cbebf9af2.svg",
+    "static/media/menu.svg": "/sportup/static/media/menu.3010cf23f5cde21eb1da.svg",
+    "main.c41959b9.css.map": "/sportup/static/css/main.c41959b9.css.map",
+    "main.161a5e66.js.map": "/sportup/static/js/main.161a5e66.js.map",
+    "496.936949d3.chunk.js.map": "/sportup/static/js/496.936949d3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c41959b9.css",
+    "static/js/main.161a5e66.js"
+  ]
+}
