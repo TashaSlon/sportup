@@ -1,5 +1,6 @@
 {
-  "homepage": "https://tashaslon.github.io/sportup/",
+  "homepage": "http://tashaslon.nomoreparties.sbs/",
+  "start_url": ".",
   "name": "sportup",
   "version": "0.1.0",
   "dependencies": {
