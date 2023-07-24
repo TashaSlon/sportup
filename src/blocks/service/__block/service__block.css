@@ -1,7 +1,7 @@
 .service__block {
     display: flex;
     gap: 22px;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 
     max-width: 1122px;

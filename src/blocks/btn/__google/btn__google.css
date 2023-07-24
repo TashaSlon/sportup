@@ -1,18 +1,19 @@
 .btn__google {
-    width: 122px;
+    width: 120px;
     height: 36px;
-    
     padding: 0;
 
     background-image: url('../../../images/googleplay.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 122px 35px;
+    background-size: 120px 36px;
     border-radius: 0;
 }
 
 @media screen and (min-width: 768px) {
     .btn__google {
+        width: 180px;
         height: 52px;
+        background-size: 180px 52px;
     }
 }

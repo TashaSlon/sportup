@@ -4,11 +4,13 @@
     gap: 23px;
     flex-wrap: wrap;
 
-    width: 122px;
+    width: 120px;
+    height: 36px;
 }
 
 @media screen and (min-width: 768px) {
     .header__btn-group {
-        width: 383px;
+        width: 180px;
+        height: 52px;
     }
 }
