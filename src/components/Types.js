@@ -31,7 +31,7 @@ export default function Types() {
                 </div>
                 <div className="types__icon">
                     <img src={walk} className='types__img' alt="Хотьба" />
-                    <p className='types__icon-name'>Хотьба</p>
+                    <p className='types__icon-name'>Ходьба</p>
                 </div>
                 <div className="types__icon">
                     <img src={skateboard} className='types__img' alt="Скейтборд" />
