@@ -19,12 +19,12 @@ export default function Header(props) {
                                 <LangToggle handleLanguage={props.handleLanguage}/>
                             </li>
                             <li>
-                                <Link to="/" className='links'>{text.service}</Link></li>
+                                <Link to="/" className='links menu__item'>{text.service}</Link></li>
                             {/*<li>Тарифы</li>*/}
                             <li>
-                                <Link to="/terms-conditions" className='links'>Terms-Conditions</Link></li>
+                                <Link to="/terms-conditions" className='links menu__item'>Terms-Conditions</Link></li>
                             <li>
-                                <Link to="/privacy-policy" className='links'>Privacy-policy</Link></li>
+                                <Link to="/privacy-policy" className='links menu__item'>Privacy-policy</Link></li>
                         </ul>
                     </nav>
                 </div>
