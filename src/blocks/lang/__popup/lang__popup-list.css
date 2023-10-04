@@ -1,0 +1,9 @@
+.lang__popup-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 0;
+
+    list-style: none;
+}

@@ -1,11 +1,13 @@
 .header__top {
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     flex-wrap: wrap;
 
     padding-top: 13px;
     padding-bottom: 13px;
+
+    height: 104px;
 }
 
 @media screen and (min-width: 768px) {

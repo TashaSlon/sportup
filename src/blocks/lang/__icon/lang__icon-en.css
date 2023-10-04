@@ -1,0 +1,7 @@
+.lang__icon-en {
+    width: 32px;
+    height: 32px;
+
+    background-image: url('../../../images/united-kingdom.svg');
+    background-size: cover;
+}

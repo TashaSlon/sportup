@@ -55,3 +55,13 @@
 @import url("./blocks/footer/__btn-group/footer__btn-group.css");
 @import url("./blocks/document/document.css");
 @import url("./blocks/links/links.css");
+@import url("./blocks/lang/lang.css");
+@import url("./blocks/lang/__btn/lang__btn.css");
+@import url("./blocks/lang/__icon/lang__icon-ru.css");
+@import url("./blocks/lang/__icon/lang__icon-en.css");
+@import url("./blocks/lang/__name/lang__name.css");
+@import url("./blocks/lang/__popup/lang__popup.css");
+@import url("./blocks/lang/__popup/lang__popup-open.css");
+@import url("./blocks/lang/__popup/lang__popup-list.css");
+@import url("./blocks/lang/__item/lang__item.css");
+@import url("./blocks/lang/__hidden/lang__hidden.css");

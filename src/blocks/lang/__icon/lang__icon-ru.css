@@ -1,0 +1,7 @@
+.lang__icon-ru {
+    width: 32px;
+    height: 32px;
+
+    background-image: url('../../../images/russia.svg');
+    background-size: cover;
+}

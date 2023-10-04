@@ -1,7 +1,9 @@
 import logo from '../images/logo.svg';
 import { Link } from "react-router-dom";
+import LangToggle from './LangToggle';
 
 export default function Header(props) {
+    const text = JSON.parse(localStorage.getItem('text'));
     const mainClass = props.type === 'document' ? 'header__hidden' : 'header__text-block'
     const docClass = props.type === 'document' ? 'header__text-block' : 'header__hidden';
 
@@ -14,7 +16,10 @@ export default function Header(props) {
                     <nav>
                         <ul className="menu menu__top">
                             <li>
-                                <Link to="/" className='links'>О сервисе</Link></li>
+                                <LangToggle handleLanguage={props.handleLanguage}/>
+                            </li>
+                            <li>
+                                <Link to="/" className='links'>{text.service}</Link></li>
                             {/*<li>Тарифы</li>*/}
                             <li>
                                 <Link to="/terms-conditions" className='links'>Terms-Conditions</Link></li>
@@ -25,10 +30,10 @@ export default function Header(props) {
                 </div>
                 <div className='header__banner'>
                     <div className={mainClass}>
-                        <h1 className='header__title'>Присоединись к тренировке!</h1>
-                        <p className='header__text'>SportUp - облачный трекер совместных удалённых тренировок и соревнований в реальном масштабе времени</p>
+                        <h1 className='header__title'>{text.title}</h1>
+                        <p className='header__text'>{text.subtitle}</p>
                         {/*<button className='btn btn__main'>Оформить подписку</button>*/}
-                        <p className='header__label'>Скачать приложение</p>
+                        <p className='header__label'>{text.download}</p>
                         <div className='header__btn-group'>
                             <Link to="https://play.google.com/store/apps/details?id=com.madlemonlab.sportup" target='blank' className='btn btn__google'></Link>
                         </div>
