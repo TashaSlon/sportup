@@ -47,8 +47,9 @@ function App() {
     <div className="page">
       <Routes>
         <Route path="/" element={<Main onOpenMenu={handleOpenMenuClick} handleLanguage={handleLanguage}/>} />
-        <Route path="/terms-conditions" element={<Document onOpenMenu={handleOpenMenuClick} type="terms"/>} />
-        <Route path="/privacy-policy" element={<Document onOpenMenu={handleOpenMenuClick} type="policy"/>} />
+        <Route path="/terms-conditions" element={<Document onOpenMenu={handleOpenMenuClick} type="terms" handleLanguage={handleLanguage}/>} />
+        <Route path="/privacy-policy" element={<Document onOpenMenu={handleOpenMenuClick} type="policy" handleLanguage={handleLanguage}/>} />
+        <Route path="/delete-account" element={<Document onOpenMenu={handleOpenMenuClick} type="delete-account" handleLanguage={handleLanguage}/>} />
       </Routes>
       <OpenMenuPopup isOpen={isOpenMenuPopupOpen} onClose={closeAllPopups} />
     </div>

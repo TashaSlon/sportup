@@ -7,7 +7,7 @@ export default function Document(props) {
 
   return (
     <>
-        <Header onOpenMenu={props.onOpenMenu} type='document' doc={props.type === 'terms' ? 'Terms & Conditions' : 'Privacy-policy'}/>
+        <Header onOpenMenu={props.onOpenMenu} type='document' doc={props.type === 'terms' ? 'Terms & Conditions' : 'Privacy-policy'} handleLanguage={props.handleLanguage}/>
         <main className="document">
           {props.type === 'terms' ? <Terms /> : <Policy />}
         </main>

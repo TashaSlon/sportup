@@ -13,7 +13,7 @@ export default function Header(props) {
                 <div className='header__top'>
                     <div className='header__logo-block'>
                         <button className='btn btn__menu' onClick={props.onOpenMenu}></button>
-                        <img src={logo} className="logo" alt="Логотип Место. Россия" />
+                        <Link to="/" className='links'><img src={logo} className="logo" alt="Логотип Место. Россия" /></Link>
                     </div>
                     <nav>
                         <ul className="menu menu__top">
