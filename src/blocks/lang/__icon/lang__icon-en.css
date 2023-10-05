@@ -1,7 +1,15 @@
 .lang__icon-en {
-    width: 32px;
-    height: 32px;
+    display: none;
+}
 
-    background-image: url('../../../images/united-kingdom.svg');
-    background-size: cover;
+@media screen and (min-width: 768px) {
+    .lang__icon-en {
+        display: block;
+
+        width: 32px;
+        height: 32px;
+
+        background-image: url('../../../images/united-kingdom.svg');
+        background-size: cover;
+    }
 }

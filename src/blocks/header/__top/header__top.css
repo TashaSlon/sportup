@@ -1,10 +1,9 @@
 .header__top {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
-    flex-wrap: wrap;
 
-    padding-top: 13px;
+    padding-top: 9px;
     padding-bottom: 13px;
 
     height: 104px;

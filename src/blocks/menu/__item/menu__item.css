@@ -1,6 +1,12 @@
 .menu__item {
-    display: block;
+    display: none;
+}
 
-    padding-top: 14px;
-    padding-bottom: 14px;
+@media screen and (min-width: 768px) {
+    .menu__item {
+        display: block;
+
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
 }

@@ -1,7 +1,15 @@
 .lang__icon-ru {
-    width: 32px;
-    height: 32px;
+    display: none;
+}
 
-    background-image: url('../../../images/russia.svg');
-    background-size: cover;
+@media screen and (min-width: 768px) {
+    .lang__icon-ru {
+        display: block;
+
+        width: 32px;
+        height: 32px;
+
+        background-image: url('../../../images/russia.svg');
+        background-size: cover;
+    }
 }

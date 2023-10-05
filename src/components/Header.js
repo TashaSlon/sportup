@@ -11,8 +11,10 @@ export default function Header(props) {
         <header className={ props.type==='document'?"header__back-document":"header__back" }>
             <div className='header'>
                 <div className='header__top'>
-                    <button className='btn btn__menu' onClick={props.onOpenMenu}></button>
-                    <img src={logo} className="logo" alt="Логотип Место. Россия" />
+                    <div className='header__logo-block'>
+                        <button className='btn btn__menu' onClick={props.onOpenMenu}></button>
+                        <img src={logo} className="logo" alt="Логотип Место. Россия" />
+                    </div>
                     <nav>
                         <ul className="menu menu__top">
                             <li>
