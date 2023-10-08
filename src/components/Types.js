@@ -11,6 +11,7 @@ import map from '../images/map.png';
 export default function Types() {
     const text = JSON.parse(localStorage.getItem('text'));
     console.log(text);
+    console.log(text.sports);
 
     return (
         <section className="types">
