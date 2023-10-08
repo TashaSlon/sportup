@@ -2,7 +2,7 @@ export default function Service() {
     const text = JSON.parse(localStorage.getItem('text'));
     return (
         <section className='service'>
-            <h2 className='service__title'>{text.service}</h2>
+            <h2 className='service__title'>text.service</h2>
             <div className='service__block'>
                 <ul className='service__items'>
                     <li className="service__item service__item_trainning">
