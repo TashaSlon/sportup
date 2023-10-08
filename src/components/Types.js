@@ -45,11 +45,11 @@ export default function Types() {
                 </div>
                 <div className="types__icon">
                     <img src={skates} className='types__img' alt='text.sport8' />
-                    <p className='types__icon-name'>{text.sport8}</p>
+                    <p className='types__icon-name'>text.sport8</p>
                 </div>
             </div>
             <div className='types__block'>
-            <img src={map} className='types__map' alt={text.sportImage} />
+            <img src={map} className='types__map' alt='text.sportImage' />
                 <div className="types__text-block">
                     <p className='types__text-title'>text.title2</p>
                     <p className='types__text'>text.subtitle2</p>

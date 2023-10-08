@@ -27,8 +27,8 @@ export default function LangToggle(props) {
         <>
             <div className={langClass}>
                 <div className="lang__item" onClick={changeLanguage}>
-                    <div className={ text.lang === 'Ru' ? "lang__icon-ru" : "lang__icon-en" }></div>
-                    <p className="lang__name">{text.lang}</p>
+                    { /*<div className={ text.lang === 'Ru' ? "lang__icon-ru" : "lang__icon-en" }></div> */}
+                    <p className="lang__name">text.lang</p>
                     <button className="btn lang__btn"></button>
                 </div>
             </div>
