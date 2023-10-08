@@ -19,42 +19,42 @@ export default function Types() {
             <div className="types__icons">
                 <div className="types__icon">
                     <img src={run} className='types__img' alt='text.sport1' />
-                    <p className='types__icon-name'>text.sport1</p>
+                    <p className='types__icon-name'>{text.sport1}</p>
                 </div>
                 <div className="types__icon">
                     <img src={gym} className='types__img' alt='text.sport2' />
-                    <p className='types__icon-name'>text.sport2</p>
+                    <p className='types__icon-name'>{text.sport2}</p>
                 </div>
                 <div className="types__icon">
                     <img src={bicycle} className='types__img' alt='text.sport3' />
-                    <p className='types__icon-name'>text.sport3</p>
+                    <p className='types__icon-name'>{text.sport3}</p>
                 </div>
                 <div className="types__icon">
                     <img src={ski} className='types__img' alt='text.sport4' />
-                    <p className='types__icon-name'>text.sport4</p>
+                    <p className='types__icon-name'>{text.sport4}</p>
                 </div>
                 <div className="types__icon">
                     <img src={walk} className='types__img' alt='text.sport5' />
-                    <p className='types__icon-name'>text.sport5</p>
+                    <p className='types__icon-name'>{text.sport5}</p>
                 </div>
                 <div className="types__icon">
                     <img src={skateboard} className='types__img' alt='text.sport6' />
-                    <p className='types__icon-name'>text.sport6</p>
+                    <p className='types__icon-name'>{text.sport6}</p>
                 </div>
                 <div className="types__icon">
                     <img src={water} className='types__img' alt='text.sport7' />
-                    <p className='types__icon-name'>text.sport7</p>
+                    <p className='types__icon-name'>{text.sport7}</p>
                 </div>
                 <div className="types__icon">
                     <img src={skates} className='types__img' alt='text.sport8' />
-                    <p className='types__icon-name'>text.sport8</p>
+                    <p className='types__icon-name'>{text.sport8}</p>
                 </div>
             </div>
             <div className='types__block'>
             <img src={map} className='types__map' alt='text.sportImage' />
                 <div className="types__text-block">
-                    <p className='types__text-title'>text.title2</p>
-                    <p className='types__text'>text.subtitle2</p>
+                    <p className='types__text-title'>{text.title2}</p>
+                    <p className='types__text'>{text.subtitle2}</p>
                 </div>
             </div>
         </section>
