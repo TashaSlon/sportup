@@ -16,7 +16,7 @@ export default function Types() {
             <h3 className="types__title">text.sports</h3>
             <div className="types__icons">
                 <div className="types__icon">
-                    <img src={run} className='types__img' alt={text.sport1} />
+                    <img src={run} className='types__img' alt='text.sport1' />
                     <p className='types__icon-name'>{text.sport1}</p>
                 </div>
                 <div className="types__icon">

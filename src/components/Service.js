@@ -6,7 +6,7 @@ export default function Service() {
             <div className='service__block'>
                 <ul className='service__items'>
                     <li className="service__item service__item_trainning">
-                        <p className='service__item-title'>{text.aboutH1}</p>
+                        <p className='service__item-title'>text.aboutH1</p>
                         <p className='service__item-text'>{text.aboutText1}</p>
                     </li>
                     <li className="service__item service__item_friends">
