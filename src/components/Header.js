@@ -1,9 +1,11 @@
 import logo from '../images/logo.svg';
+import { useContext } from 'react';
 import { Link } from "react-router-dom";
 import LangToggle from './LangToggle';
+import { TranslationContext } from '../contexts/translation/translationContext';
 
 export default function Header(props) {
-    const text = JSON.parse(localStorage.getItem('text'));
+    const text = useContext(TranslationContext);
     const mainClass = props.type === 'document' ? 'header__hidden' : 'header__text-block'
     const docClass = props.type === 'document' ? 'header__text-block' : 'header__hidden';
 
@@ -13,7 +15,7 @@ export default function Header(props) {
                 <div className='header__top'>
                     <div className='header__logo-block'>
                         <button className='btn btn__menu' onClick={props.onOpenMenu}></button>
-                        <Link to="/" className='links'><img src={logo} className="logo" alt="Логотип Место. Россия" /></Link>
+                        <Link to="/" className='links'><img src={logo} className="logo" alt="SportUp" /></Link>
                     </div>
                     <nav>
                         <ul className="menu menu__top">
@@ -21,7 +23,7 @@ export default function Header(props) {
                                 <LangToggle handleLanguage={props.handleLanguage}/>
                             </li>
                             <li>
-                                <Link to="/" className='links menu__item'>text.service</Link></li>
+                                <Link to="/" className='links menu__item'>{text.service}</Link></li>
                             {/*<li>Тарифы</li>*/}
                             <li>
                                 <Link to="/terms-conditions" className='links menu__item'>Terms-Conditions</Link></li>
@@ -32,10 +34,10 @@ export default function Header(props) {
                 </div>
                 <div className='header__banner'>
                     <div className={mainClass}>
-                        <h1 className='header__title'>text.title</h1>
-                        <p className='header__text'>text.subtitle</p>
+                        <h1 className='header__title'>{text.title}</h1>
+                        <p className='header__text'>{text.subtitle}</p>
                         {/*<button className='btn btn__main'>Оформить подписку</button>*/}
-                        <p className='header__label'>text.download</p>
+                        <p className='header__label'>{text.download}</p>
                         <div className='header__btn-group'>
                             <Link to="https://play.google.com/store/apps/details?id=com.madlemonlab.sportup" target='blank' className='btn btn__google'></Link>
                         </div>

@@ -1,5 +1,8 @@
+import { useContext } from 'react';
+import { TranslationContext } from '../contexts/translation/translationContext';
+
 export default function Service() {
-    const text = JSON.parse(localStorage.getItem('text'));
+    const text = useContext(TranslationContext);
     return (
         <section className='service'>
             <h2 className='service__title'>{text.service}</h2>

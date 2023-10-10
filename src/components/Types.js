@@ -1,3 +1,5 @@
+import { useContext } from 'react';
+import { TranslationContext } from '../contexts/translation/translationContext';
 import run from '../images/run.svg';
 import gym from '../images/gym.svg';
 import bicycle from '../images/bicycle.svg';
@@ -9,7 +11,7 @@ import skates from '../images/skates.svg';
 import map from '../images/map.png';
 
 export default function Types() {
-    const text = JSON.parse(localStorage.getItem('text'));
+    const text = useContext(TranslationContext);
 
     return (
         <section className="types">

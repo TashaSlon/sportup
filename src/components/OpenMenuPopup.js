@@ -1,8 +1,8 @@
 import logo from '../images/logo.svg';
 import { Link } from "react-router-dom";
 
-export function OpenMenuPopup({ isOpen, onClose }) {
-    const popupClass= isOpen ? ('popup popup_opened'): 'popup';
+export function OpenMenuPopup({ isOpenPopup, onClose }) {
+    const popupClass= isOpenPopup ? ('popup popup_opened'): 'popup';
 
     function handleClose() {
         onClose();
@@ -11,7 +11,7 @@ export function OpenMenuPopup({ isOpen, onClose }) {
     return (
         <section className={popupClass}
         id='side-menu'
-        isOpen={isOpen} 
+        isOpenPopup={isOpenPopup} 
         onClose={handleClose}>
             <div className='popup__top'>
                 <button className='btn btn__close' onClick={onClose} type="reset"></button>
