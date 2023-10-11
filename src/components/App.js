@@ -9,19 +9,26 @@ import { getCountry } from '../utils/CountryApi';
 
 function App() {
   const [isOpenMenuPopupOpen, setIsOpenMenuPopupOpen] = useState(false);
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState(localStorage.getItem('lang'));
 
   useEffect(() => {
-    if (language === 'none') {
+    console.log(language);
+    if (language === null) {
       checkCountry();
     }
   }, []);
+
+  useEffect(()=> {
+    console.log(language);
+  }, [language]);
 
   function checkCountry() {
     getCountry()
     .then((res) => {
       const lang = (res.country_code2 === 'RU')||(res.country_code2 === 'BY')||(res.country_code2 === 'KZ') ? 'ru' : 'en';
+      console.log(language);
       setLanguage(lang);
+      localStorage.setItem('lang', lang);
     })
     .catch(err => {
       console.log(err);
@@ -38,10 +45,11 @@ function App() {
 
   function handleLanguage(lang) {
     setLanguage(lang);
+    localStorage.setItem('lang', lang);
   }
 
   return (
-    <TranslationContext.Provider value={translations[language]}>
+    <TranslationContext.Provider value={translations[language===null? 'en' : language]}>
       <div className="page">
         <Routes>
           <Route path="/" element={<Main onOpenMenu={handleOpenMenuClick} handleLanguage={handleLanguage}/>} />
