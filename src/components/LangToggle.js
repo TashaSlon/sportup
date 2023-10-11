@@ -15,7 +15,6 @@ export default function LangToggle(props) {
     function chooseLanguage(e) {
         const langChoice = e.target;
         const lang = langChoice.getAttribute('lang');
-        console.log(lang);
         props.handleLanguage(lang);
         changeLanguage();
     }

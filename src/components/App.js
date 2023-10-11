@@ -12,21 +12,15 @@ function App() {
   const [language, setLanguage] = useState(localStorage.getItem('lang'));
 
   useEffect(() => {
-    console.log(language);
     if (language === null) {
       checkCountry();
     }
   }, []);
 
-  useEffect(()=> {
-    console.log(language);
-  }, [language]);
-
   function checkCountry() {
     getCountry()
     .then((res) => {
       const lang = (res.country_code2 === 'RU')||(res.country_code2 === 'BY')||(res.country_code2 === 'KZ') ? 'ru' : 'en';
-      console.log(language);
       setLanguage(lang);
       localStorage.setItem('lang', lang);
     })
