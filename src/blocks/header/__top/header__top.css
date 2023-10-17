@@ -1,4 +1,6 @@
 .header__top {
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: start;
