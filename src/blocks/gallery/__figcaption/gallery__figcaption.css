@@ -13,16 +13,10 @@
 
 	padding: 2px;
 	box-sizing: border-box;
-	
+
 	color: white;
 	font-size: 0.8rem;
 	z-index: 1;
 	opacity: 0;
 	transition: opacity 600ms, transform 600ms;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	.gallery__figcaption {
-		transform: translate3d(0, 2rem, 0);
-	}
 }
