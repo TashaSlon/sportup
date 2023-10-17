@@ -23,5 +23,15 @@ export const textEn = {
     sport8: 'Skates',
     sportImage: 'Map',
     title2: 'SportUp',
-    subtitle2: 'You can run in Moscow, and I in Perm, Eliud Kipchoge in Berlin - and all at the same time, communicating or silently, lagging behind and overtaking each other. Quick search for training sessions, partners and starts!'
+    subtitle2: 'You can run in Moscow, and I in Perm, Eliud Kipchoge in Berlin - and all at the same time, communicating or silently, lagging behind and overtaking each other. Quick search for training sessions, partners and starts!',
+    deleteAccountMenu: 'Delete account',
+    deleteTitle: 'Delete your Account',
+    deleteAccountText: 'You can delete your Account at any time. If you change your mind, you might not be able to recover it.',
+    deleteAccountStep1: 'Open mobile app SportUp.',
+    deleteAccountStep2: 'Select "More" in menu.',
+    deleteAccountStep3: 'Click icon "Remove account".',
+    deleteAccountStep4: 'Confirm deleting.',
+    deleteAccountImage1: 'Step 2',
+    deleteAccountImage2: 'Step 3',
+    deleteAccountImage3: 'Step 4',
 };

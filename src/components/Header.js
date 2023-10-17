@@ -2,12 +2,12 @@ import logo from '../images/logo.svg';
 import { useContext } from 'react';
 import { Link } from "react-router-dom";
 import LangToggle from './LangToggle';
-import { TranslationContext } from '../contexts/translation/translationContext';
+import { TranslationContext, translations } from '../contexts/translation/translationContext';
 
 export default function Header(props) {
     const text = useContext(TranslationContext);
-    const mainClass = props.type === 'document' ? 'header__hidden' : 'header__text-block'
-    const docClass = props.type === 'document' ? 'header__text-block' : 'header__hidden';
+    const mainClass = props.type === 'document' ? 'header__hidden' : 'header__text-block';
+    const docClass = props.type === 'document' ? 'header__doc-block' : 'header__hidden';
 
     return (
         <header className={ props.type==='document'?"header__back-document":"header__back" }>
@@ -29,6 +29,8 @@ export default function Header(props) {
                                 <Link to="/terms-conditions" className='links menu__item'>Terms-Conditions</Link></li>
                             <li>
                                 <Link to="/privacy-policy" className='links menu__item'>Privacy-policy</Link></li>
+                            <li>
+                                <Link to="/delete-account" className='links menu__item'>{text.deleteAccountMenu}</Link></li>
                         </ul>
                     </nav>
                 </div>

@@ -14,16 +14,9 @@
 
 @media screen and (min-width: 768px) {
     .footer {
-        
+        padding-left: 14px;
+        padding-right: 14px;
+
+        box-sizing: border-box;
     }
 }
-
-/*.footer::after {
-    display: block;
-
-    width: 100%;
-
-    opacity: 0.8;
-    border-top: 1px solid #000;
-    content: '';
-}*/

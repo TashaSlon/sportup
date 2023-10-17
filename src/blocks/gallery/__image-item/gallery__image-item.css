@@ -1,0 +1,24 @@
+.gallery__image-item:is(:hover, :focus) .gallery__figure::after {
+	opacity: 1;
+}
+
+.gallery__image-item:is(:hover, :focus) .gallery__figcaption {
+	opacity: 1;
+	transition: opacity 600ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .gallery__image-item:is(:hover, :focus) .gallery__figure::after {
+		transform: scale(1);
+	}
+
+	.gallery__image-item:is(:hover, :focus) .gallery__figcaption {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+		transition: opacity 600ms 400ms, transform 600ms 400ms;
+	}
+
+	.gallery__image-item:is(:hover, :focus) .gallery__image {
+		transform: scale(1);
+	}
+}

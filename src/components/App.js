@@ -43,7 +43,7 @@ function App() {
   }
 
   return (
-    <TranslationContext.Provider value={translations[language===null? 'en' : language]}>
+    <TranslationContext.Provider value={language === null ? translations.en : translations[language]}>
       <div className="page">
         <Routes>
           <Route path="/" element={<Main onOpenMenu={handleOpenMenuClick} handleLanguage={handleLanguage}/>} />
