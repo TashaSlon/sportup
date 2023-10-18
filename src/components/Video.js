@@ -4,6 +4,6 @@ export default function Video() {
     const url = 'videos/deleteAccountVideo.mp4';
 
     return (
-        <ReactPlayer className='video' url={url} controls={true}/>
+        <ReactPlayer className='video' url={url} controls={true} width='150px'/>
     );
 };

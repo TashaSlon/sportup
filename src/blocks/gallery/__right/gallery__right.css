@@ -1,0 +1,19 @@
+.gallery__right {
+    position: absolute;
+    right: 10px;
+
+    display: block;
+
+    width: 50px;
+    height: 100%;
+
+    background-image: url('../../../images/chevron_right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery__right {
+        display: none;
+    }
+}

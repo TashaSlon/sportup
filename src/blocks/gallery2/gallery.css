@@ -1,0 +1,13 @@
+.gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+    width: 100%;
+}
+
+@media screen and (min-width: 550px) {
+    .gallery {
+        width: 60%;
+    }
+}

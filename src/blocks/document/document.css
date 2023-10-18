@@ -1,7 +1,7 @@
 .document {
     max-width: 1200px;
 
-    padding: 14px 14px 0;
+    padding: 14px 14px 50px;
     margin: 0 auto;
 }
 
@@ -14,7 +14,7 @@
 
 @media screen and (min-width: 1200px) {
     .document {
-        padding: 14px 14px 0;
+        padding: 14px 14px 50px;
         box-sizing: border-box;
     }
 }

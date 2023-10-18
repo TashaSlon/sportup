@@ -19,7 +19,6 @@ export default function Delete() {
                 </ol>
             </div>
             <Gallery />
-            <Video />
         </div>
     );
 };

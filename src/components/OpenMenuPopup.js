@@ -23,14 +23,14 @@ export function OpenMenuPopup({ isOpenPopup, onClose }) {
             <nav>
                 <ul className="menu menu__side">
                     <li>
-                        <Link to="/" className='links'>{text.service}</Link></li>
+                        <Link to="/" className='links' onClick={onClose}>{text.service}</Link></li>
                     {/*<li>Тарифы</li>*/}
                     <li>
-                        <Link to="/terms-conditions" className='links'>Terms-Conditions</Link></li>
+                        <Link to="/terms-conditions" className='links' onClick={onClose}>Terms-Conditions</Link></li>
                     <li>
-                        <Link to="/privacy-policy" className='links'>Privacy-policy</Link></li>
+                        <Link to="/privacy-policy" className='links' onClick={onClose}>Privacy-policy</Link></li>
                     <li>
-                        <Link to="/delete-account" className='links'>{text.deleteAccountMenu}</Link></li>
+                        <Link to="/delete-account" className='links' onClick={onClose}>{text.deleteAccountMenu}</Link></li>
                 </ul>
             </nav>
         </section>

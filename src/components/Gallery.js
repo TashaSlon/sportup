@@ -5,51 +5,30 @@ import Step1 from '../images/deleteAccount1.jpg';
 import Step2 from '../images/deleteAccount2.jpg';
 import Step3 from '../images/deleteAccount3.jpg';
 import Step4 from '../images/deleteAccount4.jpg';
+import Video from '../images/deleteAccountVideo.gif';
 
 export default function Gallery() {
     const text = useContext(TranslationContext);
 
-    const [src, setSrc] = useState(Step1);
-    const [altImage, setAltImage] = useState(text.deleteAccountImage1);
+    const images = [Step1, Step2, Step3, Step4, Video]
+    const names = [text.deleteAccountImage1, text.deleteAccountImage2, text.deleteAccountImage3, text.deleteAccountImage3, text.deleteAccountVideo ];
 
-    const productImages = document.querySelectorAll(".gallery__figure");
+    const [count, setCount] = useState(0);
 
-    function changeImage(e) {
-        setSrc(e.target.previousSibling.src);
-        setAltImage(e.target.previousSibling.alt);
+    function handleLeft() {
+        setCount(count - 1);
     }
 
-    productImages.forEach(image => image.addEventListener("click", changeImage));
+    function handleRight() {
+        setCount(count + 1);
+    }
 
     return (
         <div className="gallery">
-            <img className="gallery__active gallery__image" src={src} alt={altImage}/>
-            <ul className="gallery__image-list">
-                <li className="gallery__image-item">
-                    <figure className="gallery__figure" onClick={changeImage}>
-                        <img className="gallery__image gallery__inactive" src={Step1} alt={text.deleteAccountImage1}/>
-                        <figcaption className="gallery__figcaption">{text.deleteAccountImage1}</figcaption>
-                    </figure>
-                </li>
-                <li className="gallery__image-item">
-                    <figure className="gallery__figure" onClick={changeImage}>
-                        <img className="gallery__image gallery__inactive" src={Step2} alt={text.deleteAccountImage2}/>
-                        <figcaption className="gallery__figcaption">{text.deleteAccountImage2}</figcaption>
-                    </figure>
-                </li>
-                <li className="gallery__image-item">
-                    <figure className="gallery__figure" onClick={changeImage}>
-                        <img className="gallery__image gallery__inactive" src={Step3} alt={text.deleteAccountImage3}/>
-                        <figcaption className="gallery__figcaption">{text.deleteAccountImage3}</figcaption>
-                    </figure>
-                </li>
-                <li className="gallery__image-item">
-                    <figure className="gallery__figure" onClick={changeImage}>
-                        <img className="gallery__image gallery__inactive" src={Step4} alt={text.deleteAccountImage3}/>
-                        <figcaption className="gallery__figcaption">{text.deleteAccountImage3}</figcaption>
-                    </figure>
-                </li>
-            </ul>
+            <div className='gallery__count'>{count + 1} из {images.length}</div>
+            <div className={count === 0 ? 'gallery__disable' : 'gallery__left'} onClick={handleLeft}></div>
+            <div className={count === (images.length - 1)  ? 'gallery__disable' : 'gallery__right'} onClick={handleRight}></div>
+            <img className='gallery__image' src={images[count]} alt={names[count]} />
         </div>
     );
 };

@@ -20,9 +20,6 @@ export default function Header(props) {
                     <nav>
                         <ul className="menu menu__top">
                             <li>
-                                <LangToggle handleLanguage={props.handleLanguage}/>
-                            </li>
-                            <li>
                                 <Link to="/" className='links menu__item'>{text.service}</Link></li>
                             {/*<li>Тарифы</li>*/}
                             <li>
@@ -33,6 +30,7 @@ export default function Header(props) {
                                 <Link to="/delete-account" className='links menu__item'>{text.deleteAccountMenu}</Link></li>
                         </ul>
                     </nav>
+                    <LangToggle handleLanguage={props.handleLanguage}/>
                 </div>
                 <div className='header__banner'>
                     <div className={mainClass}>

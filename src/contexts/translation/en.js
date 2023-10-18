@@ -34,4 +34,5 @@ export const textEn = {
     deleteAccountImage1: 'Step 2',
     deleteAccountImage2: 'Step 3',
     deleteAccountImage3: 'Step 4',
+    deleteAccountVideo: 'Video',
 };

@@ -70,12 +70,9 @@
 @import url("./blocks/lang/__hidden/lang__hidden.css");
 @import url("./blocks/delete/delete.css");
 @import url("./blocks/delete/__text-block/delete__text-block.css");
+@import url("./blocks/video/video.css");
 @import url("./blocks/gallery/gallery.css");
 @import url("./blocks/gallery/__image/gallery__image.css");
-@import url("./blocks/gallery/__active/gallery__active.css");
-@import url("./blocks/gallery/__inactive/gallery__inactive.css");
-@import url("./blocks/gallery/__image-list/gallery__image-list.css");
-@import url("./blocks/gallery/__image-item/gallery__image-item.css");
-@import url("./blocks/gallery/__figure/gallery__figure.css");
-@import url("./blocks/gallery/__figcaption/gallery__figcaption.css");
-@import url("./blocks/video/video.css");
+@import url("./blocks/gallery/__count/gallery__count.css");
+@import url("./blocks/gallery/__right/gallery__right.css");
+@import url("./blocks/gallery/__left/gallery__left.css");
