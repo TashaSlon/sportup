@@ -71,8 +71,3 @@
 @import url("./blocks/delete/delete.css");
 @import url("./blocks/delete/__text-block/delete__text-block.css");
 @import url("./blocks/video/video.css");
-@import url("./blocks/gallery/gallery.css");
-@import url("./blocks/gallery/__image/gallery__image.css");
-@import url("./blocks/gallery/__count/gallery__count.css");
-@import url("./blocks/gallery/__right/gallery__right.css");
-@import url("./blocks/gallery/__left/gallery__left.css");

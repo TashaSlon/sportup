@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { useContext } from 'react';
 import { TranslationContext } from '../contexts/translation/translationContext';
-import Gallery from './Gallery';
-import Video from "./Video";
+import Video from '../images/deleteAccountVideo.gif';
 
 export default function Delete() {
     const text = useContext(TranslationContext);
@@ -18,7 +17,7 @@ export default function Delete() {
                     <li>{text.deleteAccountStep4}</li>
                 </ol>
             </div>
-            <Gallery />
+            <img className='video' src={Video} alt={text.deleteAccountVideo} />
         </div>
     );
 };
