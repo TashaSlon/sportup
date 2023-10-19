@@ -31,8 +31,4 @@ export const textEn = {
     deleteAccountStep2: 'Select "More" in menu.',
     deleteAccountStep3: 'Click icon "Remove account".',
     deleteAccountStep4: 'Confirm deleting.',
-    deleteAccountImage1: 'Step 2',
-    deleteAccountImage2: 'Step 3',
-    deleteAccountImage3: 'Step 4',
-    deleteAccountVideo: 'Video',
 };

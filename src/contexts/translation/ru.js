@@ -31,8 +31,4 @@ export const textRu = {
     deleteAccountStep2: 'Выберете пункт "Ещё" в меню.',
     deleteAccountStep3: 'Нажмите на иконку удаления аккаунта.',
     deleteAccountStep4: 'Подтвердите удаление.',
-    deleteAccountImage1: 'Шаг 2',
-    deleteAccountImage2: 'Шаг 3',
-    deleteAccountImage3: 'Шаг 4',
-    deleteAccountVideo: 'Видео',
 };
