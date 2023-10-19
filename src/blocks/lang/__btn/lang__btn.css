@@ -1,0 +1,11 @@
+.lang__btn {
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    padding: 0;
+
+    background-image: url('../../../images/arrow.svg');
+    background-size: cover;
+}

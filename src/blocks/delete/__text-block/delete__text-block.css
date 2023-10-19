@@ -1,0 +1,9 @@
+.delete__text-block {
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 550px) {
+    .delete__text-block {
+        width: 60%;
+    }
+}

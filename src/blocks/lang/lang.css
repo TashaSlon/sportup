@@ -1,0 +1,15 @@
+.lang {
+    position: relative;
+
+    width: 55px;
+
+    padding-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .lang{
+        width: 105px;
+
+        padding-top: 12px;
+    }
+}

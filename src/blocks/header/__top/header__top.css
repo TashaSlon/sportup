@@ -1,11 +1,15 @@
 .header__top {
+    position: relative;
+    z-index: 2;
     display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
 
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 9px;
+
+    height: 104px;
+
+    box-sizing: border-box;
 }
 
 @media screen and (min-width: 768px) {
@@ -13,6 +17,6 @@
         justify-content: space-between;
 
         padding-top: 24px;
-        padding-bottom: 24px;
+        padding-bottom: 0;
     }
 }
