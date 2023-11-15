@@ -2,7 +2,8 @@ import logo from '../images/logo.svg';
 import { useContext } from 'react';
 import { Link } from "react-router-dom";
 import LangToggle from './LangToggle';
-import { TranslationContext, translations } from '../contexts/translation/translationContext';
+import { TranslationContext } from '../contexts/translation/translationContext';
+import User from './User';
 
 export default function Header(props) {
     const text = useContext(TranslationContext);
@@ -26,11 +27,14 @@ export default function Header(props) {
                                 <Link to="/terms-conditions" className='links menu__item'>Terms-Conditions</Link></li>
                             <li>
                                 <Link to="/privacy-policy" className='links menu__item'>Privacy-policy</Link></li>
-                            <li>
-                                <Link to="/delete-account" className='links menu__item'>{text.deleteAccountMenu}</Link></li>
+                            {/*<li>
+                                <Link to="/delete-account" className='links menu__item'>{text.deleteAccountMenu}</Link></li>*/}
                         </ul>
                     </nav>
-                    <LangToggle handleLanguage={props.handleLanguage}/>
+                    <div className='header__user'>
+                        <User onOpenLogin={props.onOpenLogin} />
+                        <LangToggle handleLanguage={props.handleLanguage} />
+                    </div>
                 </div>
                 <div className='header__banner'>
                     <div className={mainClass}>

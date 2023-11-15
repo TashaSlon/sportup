@@ -1,0 +1,12 @@
+.popup__btn-vk {
+    display: inline-block;
+
+    width: 18px;
+    height: 18px;
+    
+    padding-right: 20px;
+
+    background-image: url("../../../images/vk.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}

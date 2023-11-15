@@ -1,0 +1,12 @@
+.popup__btn-google {
+    display: inline-block;
+
+    width: 18px;
+    height: 18px;
+    
+    padding-right: 20px;
+
+    background-image: url("../../../images/google.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}

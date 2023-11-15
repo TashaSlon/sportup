@@ -30,12 +30,12 @@ export default function LangToggle(props) {
             </div>
             <div className={popupClass}>
                 <ul className="lang__popup-list">
-                    <li className="lang__item" onClick={chooseLanguage} lang='ru'>
+                    <li className="lang__list-item" onClick={chooseLanguage} lang='ru'>
                         <div className="lang__icon-ru" lang='ru'></div>
                         <p className="lang__name" lang='ru'>Ru</p>
                         <button className="btn lang__btn" onClick={changeLanguage}></button>
                     </li>
-                    <li className="lang__item" onClick={chooseLanguage} lang='en'>
+                    <li className="lang__list-item" onClick={chooseLanguage} lang='en'>
                         <div className="lang__icon-en" lang='en'></div>
                         <p className="lang__name" lang='en'>En</p>
                     </li>

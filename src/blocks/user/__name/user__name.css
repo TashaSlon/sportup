@@ -1,0 +1,12 @@
+.user__name {
+    display: none;
+
+    margin: 0;
+    padding-top: 2px;
+}
+
+@media screen and (min-width: 768px) {
+    .user__name {
+        display: block;
+    }
+}

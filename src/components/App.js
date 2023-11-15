@@ -1,15 +1,73 @@
-import { useState, useEffect } from 'react';
-import { OpenMenuPopup } from "./OpenMenuPopup";
-import { Route, Routes } from 'react-router-dom';
+import { useState, useEffect, useRef } from 'react';
+import { OpenMenuPopup } from "./OpenMenuPopup.js";
+import LoginPopup from "./LoginPopup.js";
+import VKPopup from "./VKPopup.js";
+import { Route, Routes, Navigate, useNavigate  } from 'react-router-dom';
 import React from 'react';
-import Main from './Main';
-import Document from './Document';
-import { TranslationContext, translations } from '../contexts/translation/translationContext';
-import { getCountry } from '../utils/CountryApi';
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import Main from './Main.js';
+import Document from './Document.js';
+import Profile from './Profile.js';
+import { TranslationContext, translations } from '../contexts/translation/translationContext.js';
+import { CurrentUserContext } from '../contexts/CurrentUserContext.js';
+import { getCountry } from '../utils/CountryApi.js';
+import { api } from '../utils/Api.js';
+import { logout } from '../utils/auth.js';
+import ProtectedRouteElement from './ProtectedRoute.js';
+import { authorize } from '../utils/firebase.js';
+import { oneTapButton } from '../utils/vkontakte.js';
 
 function App() {
   const [isOpenMenuPopupOpen, setIsOpenMenuPopupOpen] = useState(false);
+  const [isOpenPopup, setIsOpenPopup] = useState(false);
+  const [isOpenVKPopup, setIsOpenVKPopup] = useState(false);
   const [language, setLanguage] = useState(localStorage.getItem('lang'));
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [currentUser, setCurrentUser] = useState({});
+  const [userData, setUserData] = useState({});
+  const [status, setStatus] = useState(false);
+  const [isInfoTooltipOpen, setIsInfoTooltipOpen] = useState(false);
+
+  const navigate = useNavigate();
+
+  const authRef = useRef(null);
+
+  useEffect(() => {
+    if (authRef) {
+      authRef.current.appendChild(oneTapButton.getFrame());
+    }
+  }, [authRef]);
+
+  function tokenCheck() {
+    const auth = getAuth();
+
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setCurrentUser({
+          token: user.accessToken,
+          name: user.displayName,
+          photo: user.photoURL
+        });
+        setLoggedIn(true);
+        closeAllPopups();
+        console.log(user);
+      } else {
+        setCurrentUser({});
+        setLoggedIn(false);
+      }
+    });
+  };
+
+  useEffect(() => {
+    tokenCheck();
+    if (loggedIn){
+      console.log('hhhh');
+      /* api.getUserInfo()
+        .then(userData => {
+          setCurrentUser(userData);
+        })
+        .catch(err => console.log(`Ошибка.....: ${err}`)) */
+    }},[loggedIn]); 
 
   useEffect(() => {
     if (language === null) {
@@ -29,12 +87,18 @@ function App() {
     })
   }
 
-  function handleOpenMenuClick() {
+  function handleOpenMenuPopup() {
     setIsOpenMenuPopupOpen(true);
   }
 
+  function handleOpenLoginPopup() {
+    setIsOpenPopup(true);
+}
+
   function closeAllPopups() {
     setIsOpenMenuPopupOpen(false);
+    setIsOpenPopup(false);
+    setIsOpenVKPopup(false);
   }
 
   function handleLanguage(lang) {
@@ -42,17 +106,60 @@ function App() {
     localStorage.setItem('lang', lang);
   }
 
+  function handleLoginGoogle() {
+    authorize()
+      .then((data) => {
+          localStorage.setItem('token', data);
+          //setUserData(email);
+          setLoggedIn(true);
+          navigate('/', {replace: true});
+      })
+      .catch(err => {
+        setStatus(false);
+        handleInfoTooltipClick(err);
+      });
+  }
+
+  function handleLoginVK() {
+    setIsOpenPopup(false);
+    setIsOpenVKPopup(true);
+  };
+
+  function signOut(){
+    logout()
+    .then((res) => {
+      setLoggedIn(false);
+      navigate('/sign-in', {replace: true});
+    })
+    .catch(err => {
+      setStatus(false);
+      handleInfoTooltipClick(err);
+    });
+  }
+
+  function handleInfoTooltipClick(res) {
+    if(res.data) {
+      setStatus(true);
+    }
+    setIsInfoTooltipOpen(true);
+  };
+
   return (
     <TranslationContext.Provider value={language === null ? translations.en : translations[language]}>
-      <div className="page">
-        <Routes>
-          <Route path="/" element={<Main onOpenMenu={handleOpenMenuClick} handleLanguage={handleLanguage}/>} />
-          <Route path="/terms-conditions" element={<Document onOpenMenu={handleOpenMenuClick} type="terms" handleLanguage={handleLanguage}/>} />
-          <Route path="/privacy-policy" element={<Document onOpenMenu={handleOpenMenuClick} type="policy" handleLanguage={handleLanguage}/>} />
-          <Route path="/delete-account" element={<Document onOpenMenu={handleOpenMenuClick} type="delete-account" handleLanguage={handleLanguage}/>} />
-        </Routes>
-        <OpenMenuPopup isOpenPopup={isOpenMenuPopupOpen} onClose={closeAllPopups} />
-      </div>
+      <CurrentUserContext.Provider value={currentUser}>
+        <div className="page">
+          <Routes>
+            <Route path="/" element={<Main onOpenMenu={handleOpenMenuPopup} onOpenLogin={handleOpenLoginPopup} handleLanguage={handleLanguage} />} />
+            <Route path="/terms-conditions" element={<Document onOpenMenu={handleOpenMenuPopup} type="terms" handleLanguage={handleLanguage}/>} />
+            <Route path="/privacy-policy" element={<Document onOpenMenu={handleOpenMenuPopup} type="policy" handleLanguage={handleLanguage}/>} />
+            <Route path="/delete-account" element={<Document onOpenMenu={handleOpenMenuPopup} type="delete-account" handleLanguage={handleLanguage}/>} />
+            <Route path="/" element={<ProtectedRouteElement element={Profile} />} />
+          </Routes>
+          <OpenMenuPopup isOpenPopup={isOpenMenuPopupOpen} onClose={closeAllPopups} />
+          <LoginPopup isOpenPopup={isOpenPopup} onClose={closeAllPopups} handleLoginGoogle={handleLoginGoogle} handleLoginVK={handleLoginVK} />
+          <VKPopup isOpenPopup={isOpenVKPopup} onClose={closeAllPopups} authRef={authRef}/>
+        </div>
+      </CurrentUserContext.Provider>
     </TranslationContext.Provider>
   );
 }

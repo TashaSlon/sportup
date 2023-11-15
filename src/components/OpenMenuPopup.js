@@ -13,12 +13,12 @@ export function OpenMenuPopup({ isOpenPopup, onClose }) {
 
     return (
         <section className={popupClass}
-        id='side-menu'
-        isOpenPopup={isOpenPopup} 
-        onClose={handleClose}>
+            id='side-menu'
+            isOpenPopup={isOpenPopup} 
+            onClose={handleClose}>
             <div className='popup__top'>
                 <button className='btn btn__close' onClick={onClose} type="reset"></button>
-                <img src={logo} className="logo" alt="Логотип Место. Россия" />
+                <img src={logo} className="logo" alt="Логотип" />
             </div>
             <nav>
                 <ul className="menu menu__side">

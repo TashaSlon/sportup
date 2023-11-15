@@ -31,4 +31,8 @@ export const textRu = {
     deleteAccountStep2: 'Выберете пункт "Ещё" в меню.',
     deleteAccountStep3: 'Нажмите на иконку удаления аккаунта.',
     deleteAccountStep4: 'Подтвердите удаление.',
+    login: "Вход",
+    popupTitle: "Вход",
+    popupBtnVk: "ВКонтакте",
+    popupBtnGoogle: "Google",
 };

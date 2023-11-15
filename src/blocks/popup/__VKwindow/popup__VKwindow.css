@@ -1,0 +1,20 @@
+.popup__VKwindow {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    width: 482px;
+    height: 396px;
+
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-top: 150px;
+    padding-bottom: 26px;
+    box-sizing: border-box;
+
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.07);
+}

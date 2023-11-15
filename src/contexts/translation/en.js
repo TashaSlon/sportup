@@ -31,4 +31,8 @@ export const textEn = {
     deleteAccountStep2: 'Select "More" in menu.',
     deleteAccountStep3: 'Click icon "Remove account".',
     deleteAccountStep4: 'Confirm deleting.',
+    login: "Login",
+    popupTitle: "Login",
+    popupBtnVk: "VKontakte",
+    popupBtnGoogle: "Google",
 };
