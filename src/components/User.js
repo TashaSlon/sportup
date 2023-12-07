@@ -17,7 +17,11 @@ export default function User(props) {
                 <img className="user__photo" src={user.photo} alt={user.name} />
                 <p className="user__name">{user.name}</p>
                 </div>
-            : <button className="btn user__login" onClick={openUserPopup}>{text.login}</button> }
+            : <>
+                <button className="btn user__login" onClick={openUserPopup}>{text.login}</button>
+                <button className="user__lk" onClick={openUserPopup}></button>
+            </> 
+            }
         </div>
     );
 };

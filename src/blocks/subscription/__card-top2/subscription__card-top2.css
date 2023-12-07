@@ -1,0 +1,18 @@
+.subscription__card-top2 {
+    width: 100%;
+    height: 146px;
+
+    padding: 0;
+    margin: 0;
+
+    background-image: url('../../../images/ski.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0 0;
+}
+
+@media screen and (min-width: 600px) {
+    .subscription__card-top2 {
+        height: 278px;
+    }
+}

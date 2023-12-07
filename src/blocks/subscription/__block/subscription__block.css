@@ -1,0 +1,17 @@
+.subscription__block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    max-width: 1122px;
+
+    padding: 20px 13px 40px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .subscription__block {
+        padding-top: 50px;
+        gap: 24px;
+    }
+}

@@ -1,0 +1,22 @@
+.user__lk {
+    display: block;
+
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 0;
+
+    width: 17px;
+    height: 19px;
+    box-sizing: border-box;
+
+    background-color: transparent;
+    background-image: url('../../../images/lk.svg');
+    background-repeat: no-repeat;
+    border: none;
+}
+
+@media screen and (min-width: 500px) {
+    .user__lk {
+        display: none;
+    }
+}

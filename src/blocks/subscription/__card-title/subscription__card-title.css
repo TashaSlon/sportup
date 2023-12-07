@@ -1,0 +1,22 @@
+.subscription__card-title {
+    margin: 0;
+    padding-top: 48px;
+
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -0.1px;
+}
+
+@media screen and (min-width: 600px) {
+    .subscription__card-title {
+        padding-top: 114px;
+
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 124%;
+        letter-spacing: 1.6px;
+    }
+}

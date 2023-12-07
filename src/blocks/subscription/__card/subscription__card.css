@@ -1,0 +1,22 @@
+.subscription__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+    min-width: 292px;
+    
+
+    margin: 0 auto;
+    padding: 0;
+
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 647px) {
+    .subscription__card {
+        width: 48%;
+    }
+}

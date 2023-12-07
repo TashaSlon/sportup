@@ -41,6 +41,7 @@
 @import url("./blocks/popup/__btn-google/popup__btn-google.css");
 @import url("./blocks/popup/__VK/popup__VK.css");
 @import url("./blocks/popup/__VKwindow/popup__VKwindow.css");
+@import url("./blocks/block/__title/block__title.css");
 @import url("./blocks/service/service.css");
 @import url("./blocks/service/__title/service__title.css");
 @import url("./blocks/service/__block/service__block.css");
@@ -62,6 +63,16 @@
 @import url("./blocks/types/__icon-name/types__icon-name.css");
 @import url("./blocks/types/__text/types__text.css");
 @import url("./blocks/types/__img/types__img.css");
+@import url("./blocks/subscription/subscription.css");
+@import url("./blocks/subscription/__block/subscription__block.css");
+@import url("./blocks/subscription/__card-price/subscription__card-price.css");
+@import url("./blocks/subscription/__card-title/subscription__card-title.css");
+@import url("./blocks/subscription/__card-top1/subscription__card-top1.css");
+@import url("./blocks/subscription/__card-top2/subscription__card-top2.css");
+@import url("./blocks/subscription/__card/subscription__card.css");
+@import url("./blocks/subscription/__list/subscription__list.css");
+@import url("./blocks/subscription/__list-item/subscription__list-item.css");
+@import url("./blocks/subscription/__button/subscription__button.css");
 @import url("./blocks/footer/footer.css");
 @import url("./blocks/footer/__block/footer__block.css");
 @import url("./blocks/footer/__copyright/footer__copyright.css");
@@ -88,3 +99,4 @@
 @import url("./blocks/user/__block/user__block.css");
 @import url("./blocks/user/__name/user__name.css");
 @import url("./blocks/user/__photo/user__photo.css");
+@import url("./blocks/user/__lk/user__lk.css");

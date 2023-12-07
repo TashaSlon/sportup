@@ -1,14 +1,20 @@
 .user__login {
-    display: block;
+    display: none;
+}
 
-    padding: 16px 60px;
-    box-sizing: border-box;
-
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 100%;
-
-    background-color: #448AFF;
-    border-radius: 10px;
+@media screen and (min-width: 500px) {
+    .user__login {
+        display: block;
+    
+        padding: 16px 60px;
+        box-sizing: border-box;
+    
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 100%;
+    
+        background-color: #448AFF;
+        border-radius: 10px;
+    }
 }
