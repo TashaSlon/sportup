@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { TranslationContext } from '../contexts/translation/translationContext';
 
-export default function Subscription() {
+export default function Subscription(props) {
     const text = useContext(TranslationContext);
     return (
         <section className='subscription'>
@@ -17,7 +17,7 @@ export default function Subscription() {
                         <li className='subscription__list-item'>{text.subscriptionTariff1Desc2}</li>
                         <li className='subscription__list-item'>{text.subscriptionTariff1Desc3}</li>
                     </ul>
-                    <button className='subscription__button btn btn__main'>{text.subscriptionTariff1Button}</button>
+                    <button className='subscription__button btn btn__main' onClick={props.onOpenLogin}>{text.subscriptionTariff1Button}</button>
                 </div>
                 <div className='subscription__card'>
                     <div className='subscription__card-top2'>
@@ -31,7 +31,7 @@ export default function Subscription() {
                         <li className='subscription__list-item'>{text.subscriptionTariff2Desc4}</li>
                         <li className='subscription__list-item'>{text.subscriptionTariff2Desc5}</li>
                     </ul>
-                    <button className='subscription__button btn btn__main'>{text.subscriptionTariff2Button}</button>
+                    <button className='subscription__button btn btn__main' onClick={props.onOpenLogin}>{text.subscriptionTariff2Button}</button>
                 </div>
             </div>
         </section>
