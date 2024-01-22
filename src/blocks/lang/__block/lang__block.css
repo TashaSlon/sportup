@@ -1,0 +1,11 @@
+.lang__block {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lang__block:hover > .lang__popup-list {
+    display: flex;
+    
+    cursor: pointer;
+}

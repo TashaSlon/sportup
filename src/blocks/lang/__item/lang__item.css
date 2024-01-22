@@ -1,9 +1,7 @@
 .lang__item {
+    float:none;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 5px;
-}
-
-.lang__item:hover {
-    cursor: pointer;
+    position: relative;
 }

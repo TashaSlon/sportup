@@ -1,16 +1,16 @@
 .header__back {
     display: block;
 
-    height: 420px;
+    height: 388px;
     width: 100%;
 
     margin: 0;
     padding: 0;
 
     background-image: url('../../../images/header-small.png');
-    background-size: auto 420px;
+    background-size: auto 380px;
     background-repeat: no-repeat;
-    background-position: 38% 0%;
+    background-position: 36% 0;
 }
 
 @media screen and (min-width: 450px) {
