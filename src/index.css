@@ -63,6 +63,7 @@
 @import url("./blocks/types/__icon-name/types__icon-name.css");
 @import url("./blocks/types/__text/types__text.css");
 @import url("./blocks/types/__img/types__img.css");
+@import url("./blocks/types/__text-block/types__text-block.css");
 @import url("./blocks/subscription/subscription.css");
 @import url("./blocks/subscription/__block/subscription__block.css");
 @import url("./blocks/subscription/__card-price/subscription__card-price.css");

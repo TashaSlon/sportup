@@ -53,8 +53,9 @@ export default function Types() {
             <div className='types__block'>
             <img src={map} className='types__map' alt={text.sportImage} />
                 <div className="types__text-block">
-                    <p className='types__text-title'>{text.title2}</p>
+                    <h3 className='types__text-title'>{text.title2}</h3>
                     <p className='types__text'>{text.subtitle2}</p>
+                    <p className='types__text'>{text.subtitle3}</p>
                 </div>
             </div>
         </section>
