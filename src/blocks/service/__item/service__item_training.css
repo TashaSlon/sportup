@@ -1,18 +1,12 @@
-.service__item_tranning {
-    position: relative;
-    
-    margin: 0 auto;
-}
-
-.service__item_tranning::before {
+.service__item_training::before {
     z-index: 1;
     position: absolute;
-    top: 100px;
-    right: 0;
+    top: 0;
+    left: -50px;
     content: '';
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background-image: url('../../../images/training.svg');
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,0 +1,13 @@
+.service__item_chat::before {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../../../images/chat.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
