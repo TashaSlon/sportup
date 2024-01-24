@@ -40,7 +40,7 @@ export default function Header(props) {
                     <div className={mainClass}>
                         <h1 className='header__title'>{text.title}</h1>
                         <p className='header__text'>{text.subtitle}</p>
-                        <button className='btn btn__main'>Оформить подписку</button>
+                        <button className='btn btn__main'>{text.subscriptionButton}</button>
                         <div className='header__btn-group'>
                             <Link to="https://play.google.com/store/apps/details?id=com.madlemonlab.sportup" target='blank' className='btn btn__google'></Link>
                         </div>

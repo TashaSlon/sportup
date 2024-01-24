@@ -33,6 +33,7 @@ export const textRu = {
     deleteAccountStep3: 'Нажмите на иконку удаления аккаунта.',
     deleteAccountStep4: 'Подтвердите удаление.',
     subscription: 'Подписка',
+    subscriptionButton: 'Оформить подписку',
     subscriptionTariff1: 'Базовая',
     subscriptionPrice1: 'Free',
     subscriptionTariff1Desc1: 'Доступ ко всем тренировочным планам и тренировкам',

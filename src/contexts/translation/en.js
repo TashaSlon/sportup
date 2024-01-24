@@ -33,6 +33,7 @@ export const textEn = {
     deleteAccountStep3: 'Click icon "Remove account".',
     deleteAccountStep4: 'Confirm deleting.',
     subscription: 'Subscription',
+    subscriptionButton: 'Subscribe',
     subscriptionTariff1: 'Basic',
     subscriptionPrice1: 'Free',
     subscriptionTariff1Desc1: 'Access to all training plans and workouts',

@@ -71,6 +71,7 @@
 @import url("./blocks/subscription/__card-top1/subscription__card-top1.css");
 @import url("./blocks/subscription/__card-top2/subscription__card-top2.css");
 @import url("./blocks/subscription/__card/subscription__card.css");
+@import url("./blocks/subscription/__card-bottom/subscription__card-bottom.css");
 @import url("./blocks/subscription/__list/subscription__list.css");
 @import url("./blocks/subscription/__list-item/subscription__list-item.css");
 @import url("./blocks/subscription/__button/subscription__button.css");

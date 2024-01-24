@@ -5,15 +5,18 @@
 
     width: 100%;
 
-    padding: 0 0 7px 32px;
+    padding: 0 0 7px 30px;
     margin: 0;
     box-sizing: border-box;
+
+    font-size: 12px;
+    line-height: 141.7%;
 }
 
 .subscription__list-item::before {
     position: absolute;
-    left: 0px;
-    top: -5px;
+    left: 0;
+    top: 0;
 
     content: "";
     display: inline-block;

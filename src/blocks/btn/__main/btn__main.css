@@ -1,9 +1,8 @@
 .btn__main {
-    margin-bottom: 20px;
     padding: 12px 22px;
     box-sizing: border-box;
 
-    max-width: 352px;
+    /*max-width: 352px;*/
 
     line-height: 123%;
 
