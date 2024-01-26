@@ -5,6 +5,7 @@ import { CurrentUserContext } from '../contexts/CurrentUserContext';
 export default function User(props) {
     const text = useContext(TranslationContext);
     const user = useContext(CurrentUserContext);
+    console.log(user);
 
     function openUserPopup() {
         props.onOpenLogin();

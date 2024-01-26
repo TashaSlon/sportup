@@ -1,3 +1,4 @@
+import { handleVKClick } from '../utils/vkontakte.js';
 import { useContext } from 'react';
 import { TranslationContext } from '../contexts/translation/translationContext';
 
@@ -14,7 +15,7 @@ export default function LoginPopup({isOpenPopup, onClose, handleLoginGoogle, han
                     <button className='btn popup__close' onClick={onClose}></button>
                     <h3 className='popup__title'>{text.popupTitle}</h3>
                     <div className='popup__group'>
-                        <button className='btn popup__btn' onClick={handleLoginVK}><icon className='popup__btn-vk'></icon>{text.popupBtnVk}</button>
+                        <button className='btn popup__btn' onClick={handleVKClick} id='VkIdSdkOneTap'><icon className='popup__btn-vk'></icon>{text.popupBtnVk}</button>
                         <button className='btn popup__btn' onClick={handleLoginGoogle}><icon className='popup__btn-google'></icon>{text.popupBtnGoogle}</button>
                     </div>
                 </div>

@@ -1,4 +1,16 @@
-import { Config, Connect, ConnectEvents } from '@vkontakte/superappkit';
+import * as VKID from '@vkid/sdk';
+ 
+VKID.Config.set({
+  app: 51839658, // Идентификатор приложения.
+  redirectUrl: 'https://localhost', // Адрес для перехода после авторизации.
+});
+
+export const handleVKClick = () => {
+    // Открытие авторизации.
+    VKID.Auth.login()
+};
+
+/*import { Config, Connect, ConnectEvents } from '@vkontakte/superappkit';
 
 Config.init({
   appId: 8165035, // Идентификатор приложения
@@ -56,3 +68,5 @@ export const oneTapButton = Connect.buttonOneTapAuth({
 
 
 // Удалить iframe можно с помощью OneTapButton.destroy();
+
+*/

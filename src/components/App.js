@@ -15,7 +15,8 @@ import { api } from '../utils/Api.js';
 import { logout } from '../utils/auth.js';
 import ProtectedRouteElement from './ProtectedRoute.js';
 import { authorize } from '../utils/firebase.js';
-import { oneTapButton } from '../utils/vkontakte.js';
+
+import { checkUser } from '../utils/madlemon.js';
 
 function App() {
   const [isOpenMenuPopupOpen, setIsOpenMenuPopupOpen] = useState(false);
@@ -30,15 +31,18 @@ function App() {
 
   const navigate = useNavigate();
 
-  const authRef = useRef(null);
-
-  useEffect(() => {
-    if (authRef) {
-      authRef.current.appendChild(oneTapButton.getFrame());
-    }
-  }, [authRef]);
-
   function tokenCheck() {
+    if (window.location.search) {
+      const authVK = JSON.parse(decodeURIComponent(window.location.search).substring(9));
+      setCurrentUser({
+        token: authVK.token,
+        name: authVK.user.first_name + ' ' + authVK.user.last_name,
+        photo: authVK.user.avatar
+      });
+      setLoggedIn(true);
+      closeAllPopups();
+    }
+    
     const auth = getAuth();
 
     onAuthStateChanged(auth, (user) => {
@@ -61,7 +65,7 @@ function App() {
   useEffect(() => {
     tokenCheck();
     if (loggedIn){
-      console.log('hhhh');
+      console.log(currentUser);
       /* api.getUserInfo()
         .then(userData => {
           setCurrentUser(userData);
@@ -109,8 +113,7 @@ function App() {
   function handleLoginGoogle() {
     authorize()
       .then((data) => {
-          localStorage.setItem('token', data);
-          //setUserData(email);
+          console.log(data);
           setLoggedIn(true);
           navigate('/', {replace: true});
       })
@@ -157,7 +160,7 @@ function App() {
           </Routes>
           <OpenMenuPopup isOpenPopup={isOpenMenuPopupOpen} onClose={closeAllPopups} />
           <LoginPopup isOpenPopup={isOpenPopup} onClose={closeAllPopups} handleLoginGoogle={handleLoginGoogle} handleLoginVK={handleLoginVK} />
-          <VKPopup isOpenPopup={isOpenVKPopup} onClose={closeAllPopups} authRef={authRef}/>
+          <VKPopup isOpenPopup={isOpenVKPopup} onClose={closeAllPopups} />
         </div>
       </CurrentUserContext.Provider>
     </TranslationContext.Provider>
