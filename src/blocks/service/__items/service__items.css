@@ -2,15 +2,13 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 15px;
 
     padding: 0;
     padding-left: 50px;
     margin: 0;
-
     list-style: none;
 }
-
 @media screen and (min-width: 768px) {
     .service__items {
         padding-left: 78px;

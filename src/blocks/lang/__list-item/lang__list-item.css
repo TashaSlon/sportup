@@ -1,0 +1,9 @@
+.lang__list-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lang__list-item:hover {
+    cursor: pointer;
+}

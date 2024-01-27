@@ -1,8 +1,10 @@
 .types__icons {
+    padding: 0 14px;
+
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: baseline;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 15px 46px;
 }

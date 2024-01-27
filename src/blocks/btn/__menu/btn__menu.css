@@ -2,17 +2,16 @@
     width: 46px;
     height: 16px;
 
-    padding: 0 14px;
-    margin: 0;
+    padding: 0;
+    margin: 0 16px 0 0;
     background-image: url('../../../images/menu.svg');
     background-size: 23px 16px;
     background-repeat: no-repeat;
-    background-position: 14px;
-
+	
     border-radius: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
     .btn__menu {
         display: none;
     }

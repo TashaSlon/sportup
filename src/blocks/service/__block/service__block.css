@@ -1,12 +1,12 @@
 .service__block {
     display: flex;
-    gap: 22px;
+    gap: 15px;
     justify-content: space-between;
     flex-wrap: wrap;
 
     max-width: 1122px;
 
-    padding-top: 25px;
+    padding-top: 18px;
     margin: 0 auto;
 }
 

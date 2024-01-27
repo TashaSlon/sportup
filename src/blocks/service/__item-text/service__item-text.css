@@ -2,6 +2,8 @@
     margin: 0;
 
     max-width: 243px;
+    font-size: 13px;
+    line-height: 138.5%;
 }
 
 @media screen and (min-width: 768px) {

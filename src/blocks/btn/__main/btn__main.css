@@ -1,3 +1,10 @@
 .btn__main {
+    padding: 12px 22px;
+    box-sizing: border-box;
+
+    /*max-width: 352px;*/
+
+    line-height: 123%;
+
     background-color: #448AFF;
 }

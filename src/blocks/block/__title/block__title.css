@@ -1,17 +1,18 @@
-.types__title {
-    padding: 41px 0 18px;
+.block__title {
     margin: 0;
+    padding: 0;
 
     font-size: 18px;
+    line-height: 123%;
     font-weight: 900;
-    line-height: 123.8%;
     letter-spacing: 0.72px;
     text-transform: uppercase;
     text-align: center;
 }
+
 @media screen and (min-width: 768px) {
-    .types__title {
-        padding: 87px 0 41px;
-        font-size: 32px;
+    .block__title {
+        font-size: 42px;
+        letter-spacing: 1.68px;
     }
 }

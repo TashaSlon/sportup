@@ -1,0 +1,7 @@
+.lang__item {
+    float:none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
