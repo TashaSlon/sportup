@@ -2,35 +2,13 @@ import { useState, useEffect } from 'react';
 import { OpenMenuPopup } from "./OpenMenuPopup";
 import { Route, Routes } from 'react-router-dom';
 import { TranslationContext, translations } from '../contexts/translation/translationContext.js';
-import { getCountry } from '../utils/CountryApi.js';
 import React from 'react';
 import Main from './Main';
 import Document from './Document';
-import { TranslationContext, translations } from '../contexts/translation/translationContext';
 import { getCountry } from '../utils/CountryApi';
 
 function App() {
   const [isOpenMenuPopupOpen, setIsOpenMenuPopupOpen] = useState(false);
-  const [language, setLanguage] = useState(localStorage.getItem('lang'));
-
-  useEffect(() => {
-    if (language === null) {
-      checkCountry();
-    }
-  }, []);
-
-  function checkCountry() {
-    getCountry()
-    .then((res) => {
-      const lang = (res.country_code2 === 'RU')||(res.country_code2 === 'BY')||(res.country_code2 === 'KZ') ? 'ru' : 'en';
-      setLanguage(lang);
-      localStorage.setItem('lang', lang);
-    })
-    .catch(err => {
-      console.log(err);
-    })
-  }
-
   const [language, setLanguage] = useState(localStorage.getItem('lang'));
 
   useEffect(() => {
