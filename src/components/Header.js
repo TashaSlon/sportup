@@ -8,6 +8,7 @@ export default function Header(props) {
     const text = useContext(TranslationContext);
     const mainClass = props.type === 'document' ? 'header__hidden' : 'header__text-block';
     const docClass = props.type === 'document' ? 'header__doc-block' : 'header__hidden';
+    const langClass = (props.docType === 'terms' || props.docType === 'policy') ? 'header__hidden' : 'header__user';
 
     return (
         <header className={ props.type==='document'?"header__back-document":"header__back" }>
@@ -29,7 +30,7 @@ export default function Header(props) {
                                 <Link to="/delete-account" className='links menu__item'>{text.deleteAccountMenu}</Link></li>
                         </ul>
                     </nav>
-                    <div className='header__user'>
+                    <div className={langClass}>
                         <LangToggle handleLanguage={props.handleLanguage} />
                     </div>
                 </div>

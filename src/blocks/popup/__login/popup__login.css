@@ -1,0 +1,7 @@
+.popup__login {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    background-color: rgba(0, 0, 0, 0.50);
+}

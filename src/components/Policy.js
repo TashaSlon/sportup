@@ -7,17 +7,17 @@ export default function Terms() {
         <p>MAD REDIS Lab LLC built the SportUp app as a Free app. This SOFTWARE is provided by MAD REDIS Lab LLC at no cost and is intended for use as is.</p>
         <p>This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Software.</p>
         <p>If you choose to use our Software, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Software. We will not use or share your information with anyone except as described in this Privacy Policy.</p>
-        <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at <Link href="https://sportup.io" title="SportUp">https://sportup.io</Link> unless otherwise defined in this Privacy Policy.</p>
+        <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at <Link className="document__link" href="https://sportup.io/terms-conditions" title="SportUp">this link</Link> unless otherwise defined in this Privacy Policy.</p>
         <p><strong>Information Collection and Use</strong></p>
         <p>For a better experience, while using our Software, we may require you to provide us with certain personally identifiable information. The information that we request will be retained by us and used as described in this privacy policy.</p>
         <p>The app does use third party Softwares that may collect information used to identify you.</p>
         <p>Link to privacy policy of third party Software providers used by the app</p>
-        <ul>
+        <ul className="document__list">
             <li>
-                <Link href="https://policies.google.com/privacy">Google Play Softwares</Link>
+                <Link className="document__link" href="https://policies.google.com/privacy">Google Play Softwares</Link>
             </li>
             <li>
-                <Link href="https://firebase.google.com/policies/analytics">Google Analytics for Firebase</Link>
+                <Link className="document__link" href="https://firebase.google.com/policies/analytics">Google Analytics for Firebase</Link>
             </li>
         </ul>
         <p><strong>Log Data</strong></p>

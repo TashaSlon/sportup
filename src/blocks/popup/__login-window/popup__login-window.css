@@ -1,0 +1,17 @@
+.popup__login-window {
+    position: relative;
+
+    width: 482px;
+
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-bottom: 26px;
+    box-sizing: border-box;
+
+    background-color: #fff;
+    background-image: url('../../../images/login-bike.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.07);
+}

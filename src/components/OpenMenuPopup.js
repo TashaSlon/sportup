@@ -22,7 +22,6 @@ export function OpenMenuPopup({ isOpenPopup, onClose }) {
                 <ul className="menu menu__side">
                     <li>
                         <Link to="/" className='links' onClick={onClose}>{text.service}</Link></li>
-                    {/*<li>Тарифы</li>*/}
                     <li>
                         <Link to="/terms-conditions" className='links' onClick={onClose}>Terms-Conditions</Link></li>
                     <li>

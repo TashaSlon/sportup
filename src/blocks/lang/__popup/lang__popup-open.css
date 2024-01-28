@@ -1,0 +1,10 @@
+.lang__popup-open {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+    padding: 12px 10px;
+
+    background-color: #fff;
+    border-radius: 10px;
+}
