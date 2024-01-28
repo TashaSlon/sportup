@@ -1,5 +1,6 @@
 .btn__menu {
     width: 23px;
+    width: 23px;
     height: 16px;
 
     padding: 0;
@@ -7,6 +8,7 @@
     background-image: url('../../../images/menu.svg');
     background-size: 23px 16px;
     background-repeat: no-repeat;
+    
     
 
     border-radius: 0;
