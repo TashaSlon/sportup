@@ -1,4 +1,6 @@
 .document {
+    flex-grow: 2;
+
     max-width: 1200px;
 
     padding: 14px 13px 50px;

@@ -3,7 +3,9 @@ export default function Footer() {
 
     return (
         <footer className="footer">
-                <p className='footer__copiright'>&copy; {year} SportUp</p>
+                <div className="footer__block">
+                    <p className='footer__copiright'>&copy; {year} SportUp</p>
+                </div>
         </footer>
     );
 };

@@ -52,7 +52,7 @@
 @media screen and (min-width: 1250px) {
     .header__back {
         width: 100%;
-        height: 912px;
+        height: 866px;
 
         background-size: cover;
         background-image: url('../../../images/header.png');

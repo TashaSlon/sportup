@@ -11,3 +11,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media screen and (min-width: 768px) {
+    .service__item_friends::before {
+        left: -75px;
+
+        width: 60px;
+        height: 60px;
+    }
+}

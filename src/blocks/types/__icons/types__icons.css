@@ -8,3 +8,11 @@
     flex-wrap: wrap;
     gap: 15px 46px;
 }
+
+@media screen and (min-width: 768px) {
+    .types__icons {
+        padding: 0;
+
+        gap: 15px 28px;
+    }
+}

@@ -1,13 +1,13 @@
 .service__item-text {
     margin: 0;
 
-    max-width: 243px;
     font-size: 13px;
     line-height: 138.5%;
 }
 
 @media screen and (min-width: 768px) {
     .service__item-text {
-        max-width: 406px;
+        font-size: 16px;
+        line-height: 175%;
     }
 }

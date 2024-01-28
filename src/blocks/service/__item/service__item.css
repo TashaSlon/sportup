@@ -1,8 +1,7 @@
 .service__item {
+    width: 100%;
+
     position: relative;
     padding: 7px 0 0;
 }
 
-.service__item::before {
-    
-}

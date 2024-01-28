@@ -4,26 +4,10 @@
     align-items: flex-end;
     gap: 20px;
 
-    max-width: 1200px;
+    width: 100%;
 
-    padding: 12px 32px 12px;
     margin: 0 auto;
 
     border-top: 1px solid #C9D6F1;
 }
 
-@media screen and (min-width: 768px) {
-    .footer {
-        
-    }
-}
-
-/*.footer::after {
-    display: block;
-
-    width: 100%;
-
-    opacity: 0.8;
-    border-top: 1px solid #000;
-    content: '';
-}*/

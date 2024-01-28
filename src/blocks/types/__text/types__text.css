@@ -5,3 +5,12 @@
     font-size: 13px;
     line-height: 138.5%;
 }
+
+@media screen and (min-width: 768px) {
+    .types__text {
+        padding: 0;
+
+        font-size: 16px;
+        line-height: 175%;
+    }
+}

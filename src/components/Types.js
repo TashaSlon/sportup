@@ -8,7 +8,7 @@ import walk from '../images/walk.svg';
 import skateboard from '../images/skateboard.svg';
 import water from '../images/water.svg';
 import skates from '../images/skates.svg';
-import map from '../images/map.png';
+import map from '../images/map-big.png';
 
 export default function Types() {
     const text = useContext(TranslationContext);

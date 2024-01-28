@@ -8,3 +8,9 @@
 
     background-color: #448AFF;
 }
+
+@media screen and (min-width: 768px) {
+    .btn__main {
+        width: 352px;
+    }
+}

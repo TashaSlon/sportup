@@ -9,8 +9,6 @@
     align-items: flex-start;
     gap: 16px;
 
-
-
     margin: 0;
     padding: 8px 9px 9px;
 
@@ -18,4 +16,12 @@
 
     background-color: #fff;
     border-radius: 10px;
+}
+
+@media screen and (min-width: 500px) {
+    .lang__popup-list {
+        position: absolute;
+        top: 0;
+        right: 20px;
+    }
 }
