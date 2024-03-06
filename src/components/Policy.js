@@ -35,6 +35,13 @@ export default function Policy() {
         <p>We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
         <p><strong>Personal and Sensitive Information</strong></p>
         <p>This app collects location data to enable collecting athlete parameters only during the event in which the user participates, even when the app is closed or not in use.</p>
+        
+        <p><strong>Account Information</strong></p>
+        <p>If you would at any time like to review or change the information in your account or terminate your account, you can:</p>
+        <ul>
+            <li>Log in to your account settings and update or terminate your user account.</li>
+        </ul>
+        <p>Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.</p>
         <p><strong>Links to Other Sites</strong></p>
         <p>This Software may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or Softwares.</p>
         <p><strong>Children’s Privacy</strong></p>
