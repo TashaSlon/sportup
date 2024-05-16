@@ -1,0 +1,15 @@
+.footer__text {
+    display: inline-block;
+
+    margin: 0;
+    padding: 0 20px 0 0;
+    font-size: 10px;
+    line-height: 260%;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__text {
+        font-size: 14px;
+        line-height: 186%;
+    }
+}

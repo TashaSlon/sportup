@@ -63,6 +63,7 @@
 @import url("./blocks/footer/__copyright/footer__copyright.css");
 @import url("./blocks/footer/__label/footer__label.css");
 @import url("./blocks/footer/__btn-group/footer__btn-group.css");
+@import url("./blocks/footer/__text/footer__text.css");
 @import url("./blocks/document/document.css");
 @import url("./blocks/document/__list/document__list.css");
 @import url("./blocks/document/__link/document__link.css");
